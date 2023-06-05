@@ -10,17 +10,11 @@
 npm i -g vercel
 ```
 
-#### 2. Install [CloudFlare tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/do-more-with-tunnels/trycloudflare/) (`cloudflared`)
-
-[Download link](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/)
-
-#### 3. Then run local dev server with tunnel
+#### 2. And run local dev server
 
 ```bash
-npm run dev-with-tunnel
+vercel dev
 ```
-
-And open link from terminal (ends with `*.trycloudflare.com`) to set WebHook
 
 Now you can make some changes in [src/bot.mjs](src/bot.mjs)
 
@@ -29,8 +23,7 @@ Now you can make some changes in [src/bot.mjs](src/bot.mjs)
 ### Template structure:
 
 - [api/update.mjs](api/update.mjs) — Function for receiving WebHooks
-- [api/webhook.mjs](api/webhook.mjs) — Function for setting WebHook URL
+- [src/start.mjs](src/start.mjs) — Bootstrap script for convenient DX
 
-###### P.S. Don't forget to remove or restrict [api/webhook.mjs](api/webhook.mjs) function before going to production
 
 Made with 💜 by [Vladislav Ponomarev](https://GitHub.com/PonomareVlad)
