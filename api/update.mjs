@@ -1,4 +1,4 @@
-import bot from "../src/bot.mjs";
 import {webhookCallback} from "grammy";
+import {bot, secretToken} from "../src/bot.mjs";
 
-export default webhookCallback(bot, "http");
+export default webhookCallback(bot, "http", {secretToken});

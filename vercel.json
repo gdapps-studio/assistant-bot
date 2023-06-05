@@ -1,0 +1,9 @@
+{
+  "functions": {
+    "**": {
+      "includeFiles": "info.json"
+    }
+  },
+  "devCommand": "node src/start.mjs",
+  "buildCommand": "node src/start.mjs"
+}
