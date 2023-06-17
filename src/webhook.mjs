@@ -1,7 +1,10 @@
+import {bot} from "./bot.mjs";
+import {secretToken as secret_token} from "./data.mjs";
 import {writeFileSync} from "fs";
-import {bot, secretToken as secret_token} from "./bot.mjs";
 
-const {VERCEL_URL} = process.env;
+const {VERCEL_URL, VERCEL_ENV} = process.env;
+
+if (VERCEL_ENV === "development") process.exit();
 
 if (!VERCEL_URL) throw "VERCEL_URL is required to set webhook";
 

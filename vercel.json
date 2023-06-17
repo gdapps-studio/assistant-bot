@@ -1,9 +1,9 @@
 {
   "functions": {
     "**": {
-      "includeFiles": "info.json"
+      "includeFiles": "*.json"
     }
   },
   "buildCommand": "node src/webhook.mjs",
-  "devCommand": "node --watch src/start.mjs"
+  "installCommand": "npm ci --omit=dev"
 }
