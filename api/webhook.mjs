@@ -1,17 +1,8 @@
 import {bot} from "../src/bot.mjs";
-import {secretToken as secret_token} from "../src/data.mjs";
+import {secretToken} from "../src/data.mjs";
+import {setWebhookCallback} from "vercel-grammy";
 
-const {VERCEL_URL, VERCEL_ENV} = process.env;
-
-export default async ({headers}, {json}) => {
-    try {
-        if (VERCEL_ENV !== "development") return json({});
-        const host = headers["x-forwarded-host"] || VERCEL_URL;
-        const {href} = new URL("api/update", `https://${host}`);
-        const ok = await bot.api.setWebhook(href, {secret_token});
-        return json({ok});
-    } catch (e) {
-        console.error(e);
-        return json(e);
-    }
-}
+export default setWebhookCallback(bot, {
+    secret_token: secretToken,
+    catchErrors: true
+});
