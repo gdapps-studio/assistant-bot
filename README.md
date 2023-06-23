@@ -4,17 +4,21 @@
 
 ## What does this template do for you
 
-### Instant prototyping
+### 1. Instant prototyping
 
-Just click the blue button and change something in bot.mjs in newly minted repository
+Just click the [blue button](#one-click-deploy) and change something in [src/bot.mjs](src/bot.mjs) in newly minted
+repository
 
-### Universal bootstrap
+### 2. Universal bootstrap
 
-Use webhook or polling locally, even without a Vercel project or CLI
+Use [webhooks](https://grammy.dev/guide/deployment-types.html#how-do-webhooks-work)
+or [long polling](https://grammy.dev/guide/deployment-types.html#how-does-long-polling-work) locally, even without a
+Vercel project or [CLI](https://vercel.com/docs/cli)
 
-### Ready for production
+### 3. Ready for production
 
-Webhook will be automatically installed for every deployment on Vercel during the build step
+Webhooks will be automatically installed for every deployment on Vercel during
+the [build step](https://vercel.com/docs/concepts/deployments/builds)
 
 ## How to Use
 
@@ -40,13 +44,13 @@ Select the appropriate option and deploy it to the cloud with [Vercel](https://v
 npm run polling
 ```
 
-##### Using webhook with [CloudFlare tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/do-more-with-tunnels/trycloudflare/) ([`cloudflared`](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/)) :
+##### Using webhooks with [CloudFlare tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/do-more-with-tunnels/trycloudflare/) ([`cloudflared`](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/installation/)) :
 
 ```bash
 npm run webhook
 ```
 
-And open link from terminal (ends with `*.trycloudflare.com`) to set webhook URL
+And open link from terminal (ends with `*.trycloudflare.com`) to set webhooks URL
 
 > If you want another tunnel, just use [`vercel dev`](https://vercel.com/docs/cli/dev)
 
@@ -77,9 +81,9 @@ npm run start
 
 - [src/bot.mjs](src/bot.mjs) — Bot initialization and logic
 - [src/start.mjs](src/start.mjs) — Starts bot in long polling mode
-- [src/build.mjs](src/build.mjs) — Sets webhook at Vercel build step
+- [src/build.mjs](src/build.mjs) — Sets webhooks at every build step
 - [api/update.mjs](api/update.mjs) — Function for receiving webhooks
-- [api/webhook.mjs](api/webhook.mjs) — Function for set webhook in dev
+- [api/webhook.mjs](api/webhook.mjs) — Function for set webhooks in dev
 
 ## Related templates
 
