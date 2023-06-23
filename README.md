@@ -36,7 +36,8 @@ Select the appropriate option and deploy it to the cloud with [Vercel](https://v
 
 #### As Vercel project
 
-> Please note that you will need to create a Vercel project and [set the bot token](#as-local-project) in the settings
+> Please note that you will need to create a Vercel project and [set the bot token](#environment-variables) in the
+> settings
 
 ##### Using long polling
 
