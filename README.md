@@ -1,6 +1,20 @@
-## Telegram Bot Template for [Vercel Serverless Functions](https://vercel.com/docs/concepts/functions/serverless-functions)
+# Telegram Bot Template for [Vercel Serverless Functions](https://vercel.com/docs/concepts/functions/serverless-functions)
 
 > 📖 [Documentation for grammY](https://grammy.dev)
+
+## What does this template do for you
+
+### Instant prototyping
+
+Just click the blue button and change something in bot.mjs in newly minted repository
+
+### Universal bootstrap
+
+Use webhook or polling locally, even without a Vercel project or CLI
+
+### Ready for production
+
+Webhook will be automatically installed for every deployment on Vercel during the build step
 
 ## How to Use
 
@@ -51,6 +65,13 @@ npm run start
 ```
 
 > 💡 This command does not require a Vercel account or CLI installation to run
+
+## Environment variables
+
+- `TELEGRAM_BOT_TOKEN` — Telegram bot token
+  from [@BotFather](https://core.telegram.org/bots/tutorial#obtain-your-bot-token)
+- `TELEGRAM_SECRET_TOKEN` — [Secret token](https://core.telegram.org/bots/api#:~:text=secret_token) for incoming
+  requests
 
 ## Template structure
 
