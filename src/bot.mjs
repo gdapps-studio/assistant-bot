@@ -1,6 +1,10 @@
 import {Bot} from "grammy";
-import {token, botInfo} from "./data.mjs";
 
-export const bot = new Bot(token, {botInfo});
+export const {
+    TELEGRAM_BOT_TOKEN: token,
+    TELEGRAM_SECRET_TOKEN: secretToken = String(token).split(":").pop()
+} = process.env;
+
+export const bot = new Bot(token);
 
 bot.on("message:text", async ctx => ctx.reply(ctx.msg.text));

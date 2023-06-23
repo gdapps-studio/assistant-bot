@@ -55,9 +55,8 @@ npm run start
 ## Template structure
 
 - [src/bot.mjs](src/bot.mjs) — Bot initialization and logic
-- [src/data.mjs](src/data.mjs) — Data source for bot modules
 - [src/start.mjs](src/start.mjs) — Starts bot in long polling mode
-- [src/build.mjs](src/build.mjs) — Sets webhook and saves bot info
+- [src/build.mjs](src/build.mjs) — Sets webhook at Vercel build step
 - [api/update.mjs](api/update.mjs) — Function for receiving webhooks
 - [api/webhook.mjs](api/webhook.mjs) — Function for set webhook in dev
 
