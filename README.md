@@ -81,10 +81,14 @@ npm run start
 ## Template structure
 
 - [src/bot.mjs](src/bot.mjs) — Bot initialization and logic
-- [src/start.mjs](src/start.mjs) — Starts bot in long polling mode
-- [src/build.mjs](src/build.mjs) — Sets webhooks at every build step
-- [api/update.mjs](api/update.mjs) — Function for receiving webhooks
-- [api/webhook.mjs](api/webhook.mjs) — Function for set webhooks in dev
+
+
+- [scripts/start.mjs](scripts/start.mjs) — Starts bot in long polling mode
+- [scripts/build.mjs](scripts/build.mjs) — Sets webhook URL at build step
+
+
+- [api/webhook.mjs](api/webhook.mjs) — Function for set webhook URL at dev
+- [api/update.mjs](api/update.mjs) — Function for receiving updates
 
 ## Related templates
 
