@@ -1,5 +1,5 @@
 import {getURL} from "vercel-grammy";
-import {bot, secretToken} from "#bot";
+import {bot, secretToken} from "../src/bot.mjs";
 
 const {VERCEL_ENV} = process.env;
 

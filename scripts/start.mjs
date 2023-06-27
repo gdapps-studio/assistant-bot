@@ -1,4 +1,4 @@
-import {bot} from "#bot";
+import {bot} from "../src/bot.mjs";
 
 // Callback for exit tasks
 const onExit = () => bot.stop();
