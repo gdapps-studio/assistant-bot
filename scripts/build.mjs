@@ -9,6 +9,9 @@ const allowedEnvs = [
     // "preview"
 ];
 
+// Check bot
+await bot.init()
+
 // Exit in case of unsuitable environments
 if (!allowedEnvs.includes(VERCEL_ENV)) process.exit();
 
