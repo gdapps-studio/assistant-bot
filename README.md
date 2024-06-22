@@ -6,7 +6,7 @@
 
 ### 1. Instant prototyping
 
-Just click the [deploy button](#one-click-deploy) and change something in [src/bot.mjs](src/bot.mjs) in newly minted
+Just click the [deploy button](#a-one-click-deploy) and change something in [src/bot.mjs](src/bot.mjs) in newly minted
 repository
 
 ### 2. Universal bootstrap
@@ -18,7 +18,7 @@ Vercel account and [CLI](https://vercel.com/docs/cli)
 ### 3. Ready for production
 
 Webhooks will be automatically installed for every deployment on Vercel during
-the [build step](https://vercel.com/docs/concepts/deployments/builds)
+the [build step](https://vercel.com/docs/deployments/builds)
 
 ## How to Use
 
