@@ -5,5 +5,9 @@ import {setWebhookCallback} from "vercel-grammy";
 export default setWebhookCallback(bot, {
     path: "api/update",
     onError: "return",
+    allowedEnvs: [
+        "development",
+        "preview"
+    ],
     secretToken
 });
