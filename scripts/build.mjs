@@ -18,7 +18,6 @@ if (!allowedEnvs.includes(VERCEL_ENV)) process.exit();
 
 // Paths to remove at allowed environment
 const paths = [
-    "api/webhook.mjs",
     "public/index.html"
 ];
 
