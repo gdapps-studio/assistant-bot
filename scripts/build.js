@@ -1,6 +1,5 @@
 import {bot, secretToken} from "../build/src/bot.js";
 import {getURL} from "vercel-grammy";
-import {rm} from "node:fs/promises";
 
 const {VERCEL_ENV} = process.env;
 
@@ -15,14 +14,6 @@ await bot.init()
 
 // Exit in case of unsuitable environments
 if (!allowedEnvs.includes(VERCEL_ENV)) process.exit();
-
-// Paths to remove at allowed environment
-const paths = [
-    "public/index.html"
-];
-
-// Remove necessary paths
-await Promise.all(paths.map(path => rm(path)));
 
 // Webhook URL generation
 const url = getURL({path: "api/update"});
