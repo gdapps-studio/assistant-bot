@@ -1,4 +1,4 @@
-import {bot} from "../src/bot.mjs";
+import {bot} from "../build/src/bot.js";
 
 // Prevent error throw
 bot.catch(console.error);

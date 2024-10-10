@@ -17,6 +17,13 @@ importers:
       vercel-grammy:
         specifier: ^1.0.0
         version: 1.0.0(grammy@1.30.0)
+    devDependencies:
+      '@types/node':
+        specifier: '20'
+        version: 20.16.11
+      typescript:
+        specifier: ^5.6.3
+        version: 5.6.3
 
 packages:
 
@@ -34,6 +41,9 @@ packages:
 
   '@grammyjs/types@3.14.0':
     resolution: {integrity: sha512-uUVikYAiHNU8CvkeQ6YA/QPbMLgTTpFVLp83VkXCs423w6cDsvfdA6bcrQJGUnc/Q6zHQXXZUftXDYl2b/6L4A==}
+
+  '@types/node@20.16.11':
+    resolution: {integrity: sha512-y+cTCACu92FyA5fgQSAI8A1H429g7aSK2HsO7K4XYUWc4dY5IUz55JSDIYT6/VsOLfGy8vmvQYC2hfb0iF16Uw==}
 
   abort-controller@3.0.0:
     resolution: {integrity: sha512-h8lQ8tacZYnR3vNQTgibj+tODHI5/+l06Au2Pcriv/Gmet0eaj4TwWH41sO9wnHDiQsEj19q0drzdWdeAHtweg==}
@@ -77,6 +87,14 @@ packages:
   tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
 
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+
   vercel-grammy@1.0.0:
     resolution: {integrity: sha512-+nWKgDim2WWqaoYWbYRTCT0e66rwWp1omgvYef7ACUZ++yHhtx4y48EAA+cfqqZ92GwRxBBdQL+9maFynSSKdQ==}
     peerDependencies:
@@ -112,6 +130,10 @@ snapshots:
 
   '@grammyjs/types@3.14.0': {}
 
+  '@types/node@20.16.11':
+    dependencies:
+      undici-types: 6.19.8
+
   abort-controller@3.0.0:
     dependencies:
       event-target-shim: 5.0.1
@@ -145,6 +167,10 @@ snapshots:
       '@deno/shim-deno': 0.16.1
 
   tr46@0.0.3: {}
+
+  typescript@5.6.3: {}
+
+  undici-types@6.19.8: {}
 
   vercel-grammy@1.0.0(grammy@1.30.0):
     dependencies:

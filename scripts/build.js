@@ -37,7 +37,5 @@ if (await bot.api.setWebhook(url, options)) {
     const {url} = await bot.api.getWebhookInfo();
 
     console.info("Webhook set to URL:", url);
-    console.info("Secret token:", secretToken);
-    console.info("Info:", bot.botInfo);
 
 }

@@ -1,4 +1,4 @@
-import {bot, secretToken} from "../src/bot.mjs";
+import {bot, secretToken} from "../src/bot.js";
 import {webhookCallback} from "grammy";
 
 // Default grammY handler for incoming updates via webhooks
