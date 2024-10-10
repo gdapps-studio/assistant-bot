@@ -1,4 +1,4 @@
-import {bot, secretToken} from "../src/bot.mjs";
+import {bot, secretToken} from "../build/src/bot.js";
 import {getURL} from "vercel-grammy";
 import {rm} from "node:fs/promises";
 
