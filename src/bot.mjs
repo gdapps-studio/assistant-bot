@@ -1,4 +1,4 @@
-import { Bot, Composer } from "grammy";
+import { Bot, Composer, session } from "grammy";
 import { conversations, createConversation } from "@grammyjs/conversations";
 
 export const {
@@ -12,8 +12,12 @@ export const {
 // Default grammY bot instance
 export const bot = new Bot(token);
 
+// Use session middleware
+bot.use(session({ initial: () => ({}) }));
+
 // Use the conversations plugin
 bot.use(conversations());
+
 // Create a greeting conversation
 const greetingConversation = new Composer();
 
